@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+               // Do the below programs in anonymous function & IIFE
+//Print odd numbers in an array
+//Convert all the strings to title caps in a string array
+//Sum of all numbers in an array
+//Return all the prime numbers in an array
+//Return all the palindromes in an array
+//Return median of two sorted arrays of the same size.
+//Remove duplicates from an array
+//Rotate an array by k times
+
+
+
+//Sum of all numbers in an array
+
+//IIFE
+ function sum(arr){
+    let num =0
+ for(var i=0;i<arr.length;i++)
+ {
+    num = num + arr[i]
+ }  
+// console.log(num) 
+}
+sum([1,2,3,4,5,6])
+
+//anonymous function
+
+var value = function(arr) {
+    let count=0
+    for(let i=0;i<arr.length;i++){
+       // count = count + arr[i]
+    }
+    //console.log( count)
+}
+
+value([1,2,3,4,5]);
+
+//Print odd numbers in an array
+
+function odd(arr){
+  
+    for(i=0;i<arr.length;i++){
+
+        value = arr[i]
+       if( value%2 == !0 ){
+            console.log(value)
+       }
+    }
+}
+
+odd([1,2,3,4,5,6,7,8,9])
+
+
+//anonymous function
+
+var odd = function(arr){
+
+for(i=0;i<arr.length;i++){
+     
+     number =arr[i]
+    // console.log(number)
+     if(number%2==!0){
+        //console.log(number)
+     }
+    }
+}
+odd([1,2,3,4,5,6,7,8,9])
+
+
+
+
+//Return all the prime numbers in an array
+
+function num(arr){
+    for(i=0;i<arr.length;i++){
+   
+        value = arr[i]
+
+        if(value>=2 && value%2 == !0 ){
+            console.log(value)
+        }
+
+
+    }
+
+}
+num([1,2,3,4,5,6,7,8,9])
+
+//anonymous function
+
+var prime =function(arr){
+    for(i=0;i<arr.length;i++){
+   
+        value = arr[i]
+
+        if(value == 2 && value %2 == !0 ){
+            console.log(value)
+        }
+
+
+    }
+
+}
+prime([1,2,3,4,5,6,7,8,9])
+
+
+
+//Return all the palindromes in an array
+
+function pali(string){
+
+    let value = string[0]
+
+   var reverse = value.split('').reverse().join('')
+
+    console.log(reverse)
+
+}
+pali(['mother'])
+
+
+//anonymous function
+
+var palin =function (string){
+
+    let value = string[0]
+
+var reversed = value.split('').reverse().join("")
+
+console.log(reversed)
+
+}
+palin(['mom'])
+
+ //Convert all the strings to title caps in a string array
+function string(a){
+
+    let value = a[0]
+
+   let cap = value.toUpperCase();
+    console.log(cap)
+
+}
+string(['raja'])
+
+// anonymous function
+  
+var caps = function(a){
+    var nor = a[0]
+    let capi = nor.toUpperCase()
+    console.log(capi)
+
+}
+caps(['matha'])
+
+
+
+//Return median of two sorted arrays of the same size.
+
+
+
+    </script>
+</body>
+</html>
